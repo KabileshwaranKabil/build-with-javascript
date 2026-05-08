@@ -7,7 +7,9 @@ document.getElementById('increment').addEventListener('click',function(){
 document.getElementById('decrement').addEventListener('click',function(){
 	let counter = document.getElementById('counter-display');
 	let count = parseInt(counter.textContent);
-	count --;
+	if (count > 0){
+		count--;
+	}
 	counter.textContent=count;
 });
 
