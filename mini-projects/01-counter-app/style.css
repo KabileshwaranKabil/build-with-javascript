@@ -1,0 +1,51 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+}
+h1{
+    color:rgb(15, 15, 15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+}
+.container{
+    display:block;
+    border:2px solid rgba(14, 14, 14, 0.884);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.884);
+    
+}
+#counter-display{
+    font-size:48px;
+    font-weight:600;
+    margin-bottom: 18px;
+    padding:12px;
+    text-align: center;
+    border:2px solid rgb(16, 103, 154);
+}
+.buttons{
+    display:flex;
+    gap:25px;
+    text-align: center;
+    justify-content: center;
+}
+button{
+    padding:8px;
+    border-radius: 6px;
+    border-style: none;
+    font-size:18px;
+    color:white;
+    cursor: pointer;
+    width: 80px;
+}
+#increment{
+    background-color: rgb(57, 157, 32);
+}
+#decrement{
+    background-color: rgb(29, 200, 154);
+}
+#reset{
+    background-color: rgb(210, 40, 91);
+}
