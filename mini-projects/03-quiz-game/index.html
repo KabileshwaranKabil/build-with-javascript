@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Game</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="quiz-container">
+		<div id="header">
+			<h1>Quiz Game</h1>
+			<span id="score">Score: 0</span>
+		</div>
+		
+		<!-- Timer bar -->
+		<div id="timer-bar">
+			<div id="timer-fill"></div>
+		</div>
+		
+		<!-- Question card -->
+		<div id="question-card">
+			<p id="question-number">Question 1 of 5</p>
+			<h2 id="question-text">Loading...</h2>
+		</div>
+		
+		<!-- Answer buttons -->
+		<div id="answer-buttons">
+			<button class="answer-btn">Option A</button>
+			<button class="answer-btn">Option B</button>
+			<button class="answer-btn">Option C</button>
+			<button class="answer-btn">Option D</button>
+		</div>
+		
+		<!-- Results screen (hidden at first) -->
+		<div id="results" class="hidden">
+			<h2>Game Over!</h2>
+			<p id="final-score">You scored 0 out 5</p>
+			<button id="restart-btn">Play Again</button>
+		</div>
+		
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
