@@ -1,0 +1,145 @@
+* {
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: sans-serif;
+	background:#1a1a2e;
+	color:#f0f0f0;
+	min-height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+/* ----- Game container ----- */
+#quiz-container{
+	background: #16213e;
+	border-radius: 16px;
+	padding:32px;
+	width:100%;
+	max-width:560px;
+}
+
+#header{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	margin-bottom:20px;
+}
+
+h1{
+	font-size:22px;
+	color:#e94560;
+}
+#score{
+	font-size:15px;
+	color:#a0a0c0;
+}
+/* ── Timer bar ────────────────────────────── */
+#timer-bar {
+  background: #0f3460;
+  border-radius: 4px;
+  height: 8px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+#timer-fill {
+  height: 100%;
+  width: 100%;
+  background: #e94560;
+  border-radius: 4px;
+  transition: width 1s linear;
+}
+
+/* ── Question card ────────────────────────── */
+#question-card {
+  margin-bottom: 24px;
+}
+#question-number {
+  font-size: 13px;
+  color: #a0a0c0;
+  margin-bottom: 8px;
+}
+
+#question-text {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* ── Answer buttons ───────────────────────── */
+#answer-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.answer-btn {
+  padding: 14px 20px;
+  border: 2px solid #0f3460;
+  border-radius: 10px;
+  background: #0f3460;
+  color: #f0f0f0;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.answer-btn:hover {
+  background: #1a4a8a;
+  border-color: #e94560;
+}
+.answer-btn.correct {
+  background: #1a5c38;
+  border-color: #2ecc71;
+  color: #ffffff;
+}
+
+.answer-btn.wrong {
+  background: #5c1a1a;
+  border-color: #e74c3c;
+  color: #ffffff;
+}
+
+.answer-btn:disabled {
+  cursor: not-allowed;
+}
+
+/* ── Results screen ───────────────────────── */
+#results {
+  text-align: center;
+  padding: 20px 0;
+}
+#results h2 {
+  font-size: 28px;
+  color: #e94560;
+  margin-bottom: 12px;
+}
+
+#final-score {
+  font-size: 18px;
+  color: #a0a0c0;
+  margin-bottom: 24px;
+}
+
+#restart-btn {
+  padding: 14px 40px;
+  background: #e94560;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#restart-btn:hover {
+  background: #c73652;
+}
+
+/* ── Utility ──────────────────────────────── */
+.hidden {
+  display: none;
+}
